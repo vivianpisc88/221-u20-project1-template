@@ -1,59 +1,83 @@
 header {
-	position: fixed;
-	left:0px;
-	top: 0px;
-	height: 60px;
-	width: 100%;
+    position: fixed;
+    left:0px;
+    top: 0px;
+    height: 60px;
+    width: 100%;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-	background-color: red;
-	font-size: 30px;
-	color: white;
+    background-color: red;
+    font-size: 30px;
+    color: white;
 }
 
 main {
-	display: grid;
-	padding-top: 60px;
-	justify-content: center;
+    display: grid;
+    padding-top: 60px;
+    justify-content: center;
 }
 
 footer {
-	position: absolute;
-	left: 0px;
+    position: absolute;
+    left: 0px;
   bottom: 0px;
-	width: 100%;
-	background-color: red;
-	text-align: center;
-	font-size: 20px;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    font-size: 20px;
 }
 
 #portal_button {
-	position: fixed;
-	right: 30px;
-	top: 10px;
+    position: fixed;
+    right: 30px;
+    top: 10px;
 }
 
 a {
-	color: blue;
-	text-decoration: none;
+    color: blue;
+    text-decoration: none;
 }
 
 #redfox{
-	position: relative;
-	float: left;
-	height: 50px;
-	bottom: 5px;
+    position: relative;
+    float: left;
+    height: 50px;
+    bottom: 5px;
 }
 
 #newsfeed {
-	max-width: 600px;
-	min-width: 600px;
+    max-width: 600px;
+    min-width: 600px;
 }
 
 .feedImage {
-	max-width: 150px;
-	max-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Container for portal button */
+#portal_button {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust gap as needed */
+}
+
+/* Marquee container */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Marquee text */
+.marquee {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+/* Styling for the image */
+#portal_button img {
+    /* Add any additional styles here, such as margin or padding if needed */
 }

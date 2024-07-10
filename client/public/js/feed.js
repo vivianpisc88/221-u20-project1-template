@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     let currentStories = [];
-
+    
     currentStories.push({
         Title: 'Marist Story 1',
         Body: 'Body 1',
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         
-        newsfeedElement.innerHTML += itemHTML;
+        newsfeedElement.innerHTML += itemHTML;3
     }
 
     currentStories.forEach(function(item) {

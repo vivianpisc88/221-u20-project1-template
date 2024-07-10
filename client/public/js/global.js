@@ -1,4 +1,9 @@
-// These get run when any page moves to another.
-function goToLocation(location) {
-	window.location = location; //change to page passed.
+
+
+
+/*
+ * Check ascii code for spacebar and call goToLocation in global to change URL
+ */
+function goToLocation(url) {
+	window.location.href = url;
 }
