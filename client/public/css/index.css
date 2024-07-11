@@ -1,6 +1,6 @@
 body {
-  background-image: url("/images/campus.png");
-  background-color: #cccccc;
+  background-image: url("/images/maristnice.jpg");
+  background-color: #d87f7f;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,22 +11,24 @@ body {
 #splash_title {
 	width: 100%;
   font-size: 100px;
-  color: red;
+  color: whitesmoke;
   opacity: 0.85;
-  text-shadow: 4px 4px 4px rgba(255, 255, 255);
+  text-shadow: 4px 4px 4px rgb(98, 23, 23);
   text-align: center;
+  font-family: "Playwrite HR", cursive;
 }
 
 .menu_button {
 	background-color: rgba(255, 0, 0, 0.5);
     font-size: 28px;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     text-align: center;
     user-select: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .background_button {
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 16px 20px;
 }
