@@ -11,7 +11,7 @@ header {
 
     background-color: rgb(117, 18, 18);
     font-size: 50px;
-    color: rgb(253, 253, 253);
+    color: black;
 	font-family: "Bona Nova SC", serif;
 }
 
@@ -20,7 +20,7 @@ main {
     display: grid;
     padding-top: 55px;
     justify-content: center;
-	color:rgb(114, 50, 9)
+	color:rgb(171, 66, 0)
 }
 
 footer {
@@ -38,10 +38,11 @@ footer {
     position: fixed;
     right: 30px;
     top: 13px;
+	color: darkgrey
 }
 
 a {
-    color: rgb(0, 0, 0);
+    color: rgb(83, 53, 53);
     text-decoration: underline;
 	font-family:monospace 
 }
@@ -82,9 +83,7 @@ a {
     display: inline-block;
     animation: marquee 10s linear infinite;
 }
-#portal_button img {
-}
 #site_info {
-	color: #FFFFFF;
+	color: #e4dddd;
 	font-family:sans-serif
 }
