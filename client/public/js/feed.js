@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function removeNewsfeed() {
         let newsfeedElement = document.getElementById('newsfeed');
         if (newsfeedElement) {
-            newsfeedElement.innerHTML = '';
+            newsfeedElement.innerHTML = 'Inside your MyMarist...';
         }
     }
 
