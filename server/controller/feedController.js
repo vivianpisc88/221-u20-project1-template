@@ -1,4 +1,3 @@
-
 class FeedItem {
 	constructor(title, body, linkURL, imageURL) {
 		this.title = title;

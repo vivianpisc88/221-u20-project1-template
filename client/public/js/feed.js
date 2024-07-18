@@ -1,3 +1,4 @@
+//DOM- document object model
 document.addEventListener('DOMContentLoaded', function() {
     function Story(title, body, linkUrl, imageUrl) {
         this.Title = title;
@@ -5,44 +6,40 @@ document.addEventListener('DOMContentLoaded', function() {
         this.linkUrl = linkUrl;
         this.imageUrl = imageUrl;
     }
-
+    //initizaling the addeventlistener
     function initializePage() {
         addEventListeners();
         removeNewsfeed();
         makeNews();
     }
-
     function addEventListeners() {
         let portalButton = document.getElementById('portal_button');
         if (portalButton) {
             portalButton.addEventListener('click', goToMaristPortal);
         }
-
         let portalButtonText = document.getElementById('portal_button_text');
         if (portalButtonText) {
             portalButtonText.addEventListener('click', goToMaristPortal);
         }
     }
-
     function removeNewsfeed() {
         let newsfeedElement = document.getElementById('newsfeed');
         if (newsfeedElement) {
             newsfeedElement.innerHTML = 'Inside your MyMarist...';
         }
     }
-
+    //creating and displaying the text onto the page
     function makeNews() {
         let currentNews = [
             new Story('Welcome to Marist!', 'We are looking forward to students enjoying the buildings and activities', 'https://www.marist.edu/', 'images/campus.png'),
             new Story('News', 'All students need to be sure of news and information posted.', 'https://www.marist.edu/', 'images/news_pic.jpg'),
             new Story('A great exprience', 'Activies and clubs are agreat way to make friends and connections', 'https://www.marist.edu/', 'images/hancock.jpeg')
         ];
-
         currentNews.forEach(function(item) {
             displayItem(item);
         });
     }
-
+    //display fuction
     function displayItem(feedItem) {
         let newsfeedElement = document.getElementById('newsfeed');
         if (newsfeedElement) {
@@ -60,11 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
             newsfeedElement.innerHTML += itemHTML;
         }
     }
-
+    //maristportal 
     function goToMaristPortal() {
         goToLocation('http://my.marist.edu');
     }
-
     function goToLocation(url) {
         window.location.href = url;
     }

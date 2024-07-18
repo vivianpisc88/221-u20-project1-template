@@ -4,7 +4,7 @@ function FeedItem(title, body, LinkURL, ImageURL) {
 	this.LinkURL = LinkURL;
 	this.ImageURL = ImageURL;
 }
-
+//making our feedItem
 exports.makeFeedItem = function (title, body, LinkURL, ImageURL){
   return new FeedItem(title, body, LinkURL, ImageURL);
 };
