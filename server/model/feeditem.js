@@ -1,10 +1,12 @@
+//constructing the fuction for feedItem
 function FeedItem(title, body, LinkURL, ImageURL) {
-	this.title= title;
-	this.body = body;
-	this.LinkURL = LinkURL;
-	this.ImageURL = ImageURL;
+	this.title= title;//title of the feeditem
+	this.body = body;//body of the feeditem
+	this.LinkURL = LinkURL;// URLlink of the feeditem
+	this.ImageURL = ImageURL;//URLimage of the feeditem
 }
-//making our feedItem
+//fuction to create/make a new feeditem
 exports.makeFeedItem = function (title, body, LinkURL, ImageURL){
+	//returning the new feeditem 
   return new FeedItem(title, body, LinkURL, ImageURL);
 };

@@ -8,7 +8,7 @@ let feedItem = require("../model/feedItems");
 //router to POST and GET
 router.route("/")
     .get(feedItem.getcurrentStories)
-    .post(feedController.saveFeedAllItem)
+    .post(feedController.saveFeedItem)
 //// Route to handle DELETE,PATCH,GET AND PUT
 router.route('/:feedItemId')
     .get(feedController.getFeedItem)
