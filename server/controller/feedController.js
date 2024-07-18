@@ -1,11 +1,3 @@
-/* class FeedItem {
-	constructor(title, body, linkURL, imageURL) {
-		this.title = title;
-		this.body = body;
-		this.LinkURL = linkURL;
-		this.ImageURL = imageURL;
-	}
-} */
 
 var FeedItem = require("../model/feeditem");
 //initzailing the array 
@@ -18,7 +10,7 @@ var feedItem3 = FeedItem.makeFeedItem('A great experience', 'Activities and club
 currentStories.push(feedItem1);
 currentStories.push(feedItem2);
 currentStories.push(feedItem3);
-//functions to get feeditems
+//functions to get feeeditems
 exports.getFeedItem = function(req, res) {
 	res.setHeader('Content-Type', 'application/json');
     res.send(currentStories);
